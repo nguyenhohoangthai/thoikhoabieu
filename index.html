@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thời khóa biểu – Lý Tự Trọng</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-icon">📚</div>
+    <div>
+      <h1>Thời khóa biểu Lý Tự Trọng</h1>
+      <p>Tra cứu lịch học theo lớp và tổ hợp môn</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- FORM CARD -->
+    <div class="card">
+      <div class="card-header">
+        <span class="icon">🎓</span> Chọn lớp và tổ hợp môn
+      </div>
+      <div class="card-body">
+
+        <!-- Chọn lớp -->
+        <div class="form-section">
+          <label class="form-label" for="class">Lớp học</label>
+          <div class="select-wrapper">
+            <select id="class" name="class">
+              <option value="12A1A">12A1A</option>
+              <option value="12A1B">12A1B</option>
+              <option value="12A2">12A2</option>
+              <option value="12A3">12A3</option>
+              <option value="12A4">12A4</option>
+              <option value="12A5">12A5</option>
+              <option value="12C1">12C1</option>
+              <option value="12C2">12C2</option>
+              <option value="12D1">12D1</option>
+              <option value="12D2">12D2</option>
+              <option value="12P">12P</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Môn bắt buộc -->
+        <div class="form-section">
+          <label class="form-label">Môn bắt buộc</label>
+          <span class="required-badge">✔ Toán &nbsp;·&nbsp; ✔ Ngữ văn</span>
+        </div>
+
+        <!-- Môn tự chọn -->
+        <div class="form-section">
+          <label class="form-label">Chọn 2 môn tự chọn</label>
+
+          <div class="subject-group">
+            <div class="subject-group-label science">🔬 Khoa học tự nhiên</div>
+            <div class="checkbox-grid">
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Vật lí" value="Vật lí"> <span>⚛️ Vật lí</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Hóa học" value="Hóa học"> <span>🧪 Hóa học</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Tin học" value="Tin học"> <span>💻 Tin học</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Sinh học" value="Sinh học"> <span>🌿 Sinh học</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Công nghệ CN" value="Công nghệ CN"> <span>⚙️ Công nghệ CN</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="subject-group">
+            <div class="subject-group-label social">🌍 Khoa học xã hội</div>
+            <div class="checkbox-grid">
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Tiếng Anh" value="Tiếng Anh"> <span>🇬🇧 Tiếng Anh</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Lịch sử" value="Lịch sử"> <span>📜 Lịch sử</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Địa lí" value="Địa lí"> <span>🗺️ Địa lí</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Tiếng Pháp" value="Tiếng Pháp"> <span>🇫🇷 Tiếng Pháp</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" class="optional-subject" name="Giáo dục KTPL" value="Giáo dục KTPL"> <span>⚖️ Giáo dục KTPL</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="submit-button" type="button">
+          🔍 Xem thời khóa biểu
+        </button>
+
+      </div>
+    </div>
+
+    <!-- RESULT SECTION -->
+    <div id="result-section" style="display:none;"></div>
+
+  </main>
+
+  <footer>
+    <p>Tác giả: <strong>Hoàng Thái</strong> &nbsp;·&nbsp; Trường THPT Lý Tự Trọng</p>
+  </footer>
+
+  <!-- MODAL POPUP -->
+  <div id="modal-overlay" class="modal-overlay" style="display:none;" onclick="closeModal(event)">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" onclick="closeModalBtn()">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const optionalCheckboxes = document.querySelectorAll('input.optional-subject[type="checkbox"]');
+
+      optionalCheckboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', function () {
+          const checkedCount = Array.from(optionalCheckboxes).filter(cb => cb.checked).length;
+          if (checkedCount > 2) {
+            this.checked = false;
+            alert('Bạn chỉ được chọn tối đa 2 môn tự chọn.');
+          }
+          document.querySelectorAll('.checkbox-item').forEach(el => {
+            el.classList.toggle('checked', el.querySelector('input').checked);
+          });
+        });
+      });
+
+      document.getElementById('submit-button').addEventListener('click', handleSubmit);
+    });
+
+    function closeModal(event) {
+      if (event.target === document.getElementById('modal-overlay')) {
+        closeModalBtn();
+      }
+    }
+
+    function closeModalBtn() {
+      const overlay = document.getElementById('modal-overlay');
+      overlay.classList.remove('modal-open');
+      setTimeout(() => { overlay.style.display = 'none'; }, 280);
+    }
+
+    function openModal(html) {
+      const overlay = document.getElementById('modal-overlay');
+      document.getElementById('modal-content').innerHTML = html;
+      overlay.style.display = 'flex';
+      requestAnimationFrame(() => overlay.classList.add('modal-open'));
+    }
+
+    // ESC to close
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModalBtn();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
