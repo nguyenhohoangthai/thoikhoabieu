@@ -3,202 +3,906 @@
 // ══════════════════════════════════════════════════
 let timetableData = {
   "12A1A": {
-    "Toán": { "gv": "Nguyễn Thị Tường Uyên - Trịnh Hồ Sơn Trường", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12A1A" },
-    "Ngữ văn": { "gv": "Trương Thúy Quỳnh", "time": "Buổi sáng-Thứ7-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12A1A" },
-    "Vật lí": { "gv": "Đỗ Trần Ngọc Khánh", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12A1A" },
-    "Hóa học": { "gv": "Nguyễn Hoàng Oanh", "time": "Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ3-Tiết5;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12A1A" },
-    "Sinh học": { "gv": "Nguyễn Thanh Phương", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12A1B" },
-    "Tin học": { "gv": "root", "time": "root", "room": [] },
-    "Lịch sử": { "gv": "root", "time": "root", "room": [] },
-    "Địa lí": { "gv": "root", "time": "root", "room": [] },
-    "Tiếng Anh": { "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5", "room": "12A1A" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2", "room": "12A1A" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ7-Tiết1", "room": "12A1A" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết2", "room": "12A1A" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết5", "room": "12A1A" }
+    "Toán": {
+      "gv": "Nguyễn Thị Tường Uyên - Trịnh Hồ Sơn Trường",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5",
+      "room": "12A1A"
+    },
+    "Ngữ văn": {
+      "gv": "Trương Thúy Quỳnh",
+      "time": "Buổi sáng-Thứ7-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12A1A"
+    },
+    "Vật lí": {
+      "gv": "Đỗ Trần Ngọc Khánh",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12A1A"
+    },
+    "Hóa học": {
+      "gv": "Nguyễn Hoàng Oanh",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12A1A"
+    },
+    "Sinh học": {
+      "gv": "Nguyễn Thanh Phương",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12A1B"
+    },
+    "Tin học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Lịch sử": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tiếng Anh": {
+      "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5",
+      "room": "12A1A"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2",
+      "room": "12A1A"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ7-Tiết1",
+      "room": "12A1A"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết3",
+      "room": "12A1A"
+    }
   },
   "12A1B": {
-    "Toán": { "gv": "Nguyễn Ngọc Hạnh - Nguyễn Văn Tặng", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2;Buổi sáng-Thứ7-Tiết3", "room": "12A1B" },
-    "Ngữ văn": { "gv": "Hà Thị Thu Phương", "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12A1B" },
-    "Vật lí": { "gv": "Đỗ Trần Ngọc Khánh", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12A1A" },
-    "Hóa học": { "gv": "Nguyễn Hoàng Oanh", "time": "Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ3-Tiết5;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12A1A" },
-    "Sinh học": { "gv": "Nguyễn Thanh Phương", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12A1B" },
-    "Tin học": { "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12A1B" },
-    "Lịch sử": { "gv": "root", "time": "root", "room": [] },
-    "Địa lí": { "gv": "root", "time": "root", "room": [] },
-    "Tiếng Anh": { "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5", "room": "12A1A" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2", "room": "12A1B" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết3", "room": "12A1B" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ2-Tiết5;Buổi chiều-Thứ6-Tiết4", "room": "12A1B" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ7-Tiết4;Buổi sáng-Thứ7-Tiết5", "room": "12A1B" }
+    "Toán": {
+      "gv": "Nguyễn Ngọc Hạnh - Nguyễn Văn Tặng",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2;Buổi sáng-Thứ7-Tiết3",
+      "room": "12A1B"
+    },
+    "Ngữ văn": {
+      "gv": "Hà Thị Thu Phương",
+      "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5",
+      "room": "12A1B"
+    },
+    "Vật lí": {
+      "gv": "Đỗ Trần Ngọc Khánh",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12A1A"
+    },
+    "Hóa học": {
+      "gv": "Nguyễn Hoàng Oanh",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12A1A"
+    },
+    "Sinh học": {
+      "gv": "Nguyễn Thanh Phương",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12A1B"
+    },
+    "Tin học": {
+      "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12A1B"
+    },
+    "Lịch sử": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tiếng Anh": {
+      "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5",
+      "room": "12A1A"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12A1B"
+    }
   },
   "12A2": {
-    "Toán": { "gv": "Trịnh Hồ Sơn Trường", "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12A2" },
-    "Ngữ văn": { "gv": "Nguyễn Hoài Thanh", "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ6-Tiết4", "room": "12A2" },
-    "Vật lí": { "gv": "Nguyễn Anh Văn", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ3-Tiết4", "room": "12A4" },
-    "Hóa học": { "gv": "Lê Đỗ Huy", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12D1" },
-    "Sinh học": { "gv": "root", "time": "root", "room": [] },
-    "Tin học": { "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12A1B" },
-    "Lịch sử": { "gv": "root", "time": "root", "room": [] },
-    "Địa lí": { "gv": "root", "time": "root", "room": [] },
-    "Tiếng Anh": { "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5", "room": "12A1A" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2", "room": "12A2" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12A2" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết3", "room": "12A2" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết5;Buổi sáng-Thứ6-Tiết5;Buổi sáng-Thứ7-Tiết5", "room": "12A2" }
+    "Toán": {
+      "gv": "Trịnh Hồ Sơn Trường",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12A2"
+    },
+    "Ngữ văn": {
+      "gv": "Nguyễn Hoài Thanh",
+      "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ6-Tiết4",
+      "room": "12A2"
+    },
+    "Vật lí": {
+      "gv": "Nguyễn Anh Văn",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "Lê Đỗ Huy",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12D1"
+    },
+    "Sinh học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tin học": {
+      "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12A1B"
+    },
+    "Lịch sử": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tiếng Anh": {
+      "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5",
+      "room": "12A1A"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2",
+      "room": "12A2"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết4",
+      "room": "12A2"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết3",
+      "room": "12A2"
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết5",
+      "room": "12A2"
+    }
   },
   "12A3": {
-    "Toán": { "gv": "Hồ Sỹ Trường", "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2", "room": "12A3" },
-    "Ngữ văn": { "gv": "Lê Thị Thu Huyền", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2", "room": "12A3" },
-    "Vật lí": { "gv": "Lê Phước Dũng", "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4", "room": "12A3" },
-    "Hóa học": { "gv": "Đinh Thị Lan Hương", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12D2" },
-    "Sinh học": { "gv": "root", "time": "root", "room": [] },
-    "Tin học": { "gv": "root", "time": "root", "room": [] },
-    "Lịch sử": { "gv": "root", "time": "root", "room": [] },
-    "Địa lí": { "gv": "root", "time": "root", "room": [] },
-    "Tiếng Anh": { "gv": "Võ Thị Thúy An", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12C2" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "Trần Lương Thái", "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12A3" },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2", "room": "12A3" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết5;Buổi sáng-Thứ6-Tiết3", "room": "12A3" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết4", "room": "12A3" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ7-Tiết5", "room": "12A3" }
+    "Toán": {
+      "gv": "Hồ Sỹ Trường",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12A3"
+    },
+    "Ngữ văn": {
+      "gv": "Lê Thị Thu Huyền",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2",
+      "room": "12A3"
+    },
+    "Vật lí": {
+      "gv": "Lê Phước Dũng",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4",
+      "room": "12A3"
+    },
+    "Hóa học": {
+      "gv": "Đinh Thị Lan Hương",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12D2"
+    },
+    "Sinh học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tin học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Lịch sử": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tiếng Anh": {
+      "gv": "Võ Thị Thúy An",
+      "time": "Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12C2"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "Trần Lương Thái",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12A3"
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2",
+      "room": "12A3"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết3",
+      "room": "12A3"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ4-Tiết3",
+      "room": "12A3"
+    }
   },
   "12A4": {
-    "Toán": { "gv": "Nguyễn Thanh Nguyệt", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12A4" },
-    "Ngữ văn": { "gv": "Phạm Trần Hồng Vân", "time": "Buổi sáng-Thứ3-Tiết2;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12A4" },
-    "Vật lí": { "gv": "Nguyễn Anh Văn", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ3-Tiết4", "room": "12A4" },
-    "Hóa học": { "gv": "Nguyễn Thanh Nhuận", "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12A4" },
-    "Sinh học": { "gv": "Nguyễn Thanh Phương", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12A1B" },
-    "Tin học": { "gv": "root", "time": "root", "room": [] },
-    "Lịch sử": { "gv": "root", "time": "root", "room": [] },
-    "Địa lí": { "gv": "root", "time": "root", "room": [] },
-    "Tiếng Anh": { "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5", "room": "12A1A" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2", "room": "12A4" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết3", "room": "12A4" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết1", "room": "12A4" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết5", "room": "12A4" }
+    "Toán": {
+      "gv": "Nguyễn Thanh Nguyệt",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12A4"
+    },
+    "Ngữ văn": {
+      "gv": "Phạm Trần Hồng Vân",
+      "time": "Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5",
+      "room": "12A4"
+    },
+    "Vật lí": {
+      "gv": "Nguyễn Anh Văn",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "Nguyễn Thanh Nhuận",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12A4"
+    },
+    "Sinh học": {
+      "gv": "Nguyễn Thanh Phương",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12A1B"
+    },
+    "Tin học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Lịch sử": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tiếng Anh": {
+      "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5",
+      "room": "12A1A"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2",
+      "room": "12A4"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết3",
+      "room": "12A4"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ6-Tiết3",
+      "room": "12A4"
+    }
   },
   "12A5": {
-    "Toán": { "gv": "Nguyễn Ngọc Hạnh", "time": "Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ5-Tiết3", "room": "12A5" },
-    "Ngữ văn": { "gv": "Vũ Thị Kim Hồng", "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ6-Tiết4", "room": "12A5" },
-    "Vật lí": { "gv": "root", "time": "root", "room": [] },
-    "Hóa học": { "gv": "Lê Đỗ Huy", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12D1" },
-    "Sinh học": { "gv": "Đặng Thanh Thảo - Đỗ Thị Mai", "time": "Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12A5" },
-    "Tin học": { "gv": "root", "time": "root", "room": [] },
-    "Lịch sử": { "gv": "root", "time": "root", "room": [] },
-    "Địa lí": { "gv": "root", "time": "root", "room": [] },
-    "Tiếng Anh": { "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5", "room": "12A1A" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2", "room": "12A5" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết4", "room": "12A5" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ4-Tiết1", "room": "12A5" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ7-Tiết5", "room": "12A5" }
+    "Toán": {
+      "gv": "Nguyễn Ngọc Hạnh ",
+      "time": "Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ5-Tiết3",
+      "room": "12A5"
+    },
+    "Ngữ văn": {
+      "gv": "Vũ Thị Kim Hồng",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ6-Tiết4",
+      "room": "12A5"
+    },
+    "Vật lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "Lê Đỗ Huy",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12D1"
+    },
+    "Sinh học": {
+      "gv": "Đặng Thanh Thảo - Đỗ Thị Mai",
+      "time": "Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12A5"
+    },
+    "Tin học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Lịch sử": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tiếng Anh": {
+      "gv": "Trần Thị Trúc Ly - Nguyễn Phạm Thư",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5",
+      "room": "12A1A"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2",
+      "room": "12A5"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết4",
+      "room": "12A5"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ4-Tiết1",
+      "room": "12A5"
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết5",
+      "room": "12A5"
+    }
   },
   "12C1": {
-    "Toán": { "gv": "Nguyễn Thanh Nguyệt", "time": "Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ4-Tiết4", "room": "12C1" },
-    "Ngữ văn": { "gv": "Phạm Vũ Ngọc Quỳnh", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2;Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ5-Tiết3", "room": "12C1" },
-    "Vật lí": { "gv": "Lâm Ngọc Cớm", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ3-Tiết5", "room": "12D1" },
-    "Hóa học": { "gv": "root", "time": "root", "room": [] },
-    "Sinh học": { "gv": "root", "time": "root", "room": [] },
-    "Tin học": { "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12A1B" },
-    "Lịch sử": { "gv": "Từ Minh Lan", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12D1" },
-    "Địa lí": { "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12D1" },
-    "Tiếng Anh": { "gv": "Huỳnh Đặng Bảo Trinh", "time": "Buổi chiều-Thứ4-Tiết2;Buổi chiều-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12C1" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "Nguyễn Minh Trí", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12C1" },
-    "GDTC": { "gv": "root", "time": "Buổi chiều-Thứ4-Tiết4;Buổi chiều-Thứ4-Tiết5", "room": "12C1" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ2-Tiết1", "room": "12C1" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ7-Tiết1", "room": "12C1" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết2;Buổi sáng-Thứ7-Tiết5", "room": "12C1" }
+    "Toán": {
+      "gv": "Nguyễn Thanh Nguyệt",
+      "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ4-Tiết4",
+      "room": "12C1"
+    },
+    "Ngữ văn": {
+      "gv": "Phạm Vũ Ngọc Quỳnh",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ5-Tiết3",
+      "room": "12C1"
+    },
+    "Vật lí": {
+      "gv": "Lâm Ngọc Cớm",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Sinh học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tin học": {
+      "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12A1B"
+    },
+    "Lịch sử": {
+      "gv": "Từ Minh Lan",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12D1"
+    },
+    "Địa lí": {
+      "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12D1"
+    },
+    "Tiếng Anh": {
+      "gv": "Huỳnh Đặng Bảo Trinh",
+      "time": "Buổi chiều-Thứ4-Tiết2;Buổi chiều-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5",
+      "room": "12C1"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "Nguyễn Minh Trí",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12C1"
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi chiều-Thứ4-Tiết4;Buổi chiều-Thứ4-Tiết5",
+      "room": "12C1"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ7-Tiết1",
+      "room": "12C1"
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết2",
+      "room": "12C1"
+    }
   },
   "12C2": {
-    "Toán": { "gv": "Nguyễn Vân Anh", "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ6-Tiết4", "room": "12C2" },
-    "Ngữ văn": { "gv": "Nguyễn Thụy Thanh Trang", "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12C2" },
-    "Vật lí": { "gv": "Lâm Ngọc Cớm", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ3-Tiết5", "room": "12D1" },
-    "Hóa học": { "gv": "root", "time": "root", "room": [] },
-    "Sinh học": { "gv": "root", "time": "root", "room": [] },
-    "Tin học": { "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12A1B" },
-    "Lịch sử": { "gv": "Nguyễn Thị Nhu Sa", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2", "room": "12C2" },
-    "Địa lí": { "gv": "Ngô Minh Chánh - Giã Văn Phú", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12C2" },
-    "Tiếng Anh": { "gv": "Võ Thị Thúy An", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12C2" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi chiều-Thứ4-Tiết4;Buổi chiều-Thứ4-Tiết5", "room": "12C2" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4", "room": "12C2" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết3", "room": "12C2" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết5", "room": "12C2" }
+    "Toán": {
+      "gv": "Nguyễn Vân Anh",
+      "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2",
+      "room": "12C2"
+    },
+    "Ngữ văn": {
+      "gv": "Nguyễn Thụy Thanh Trang",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12C2"
+    },
+    "Vật lí": {
+      "gv": "Lâm Ngọc Cớm",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Sinh học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tin học": {
+      "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12A1B"
+    },
+    "Lịch sử": {
+      "gv": "Nguyễn Thị Nhu Sa",
+      "time": "root",
+      "room": []
+    },
+    "Địa lí": {
+      "gv": "Ngô Minh Chánh - Giã Văn Phú",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12C2"
+    },
+    "Tiếng Anh": {
+      "gv": "Võ Thị Thúy An",
+      "time": "Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12C2"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi chiều-Thứ4-Tiết4;Buổi chiều-Thứ4-Tiết5",
+      "room": "12C2"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết3",
+      "room": "12C2"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ6-Tiết4",
+      "room": "12C2"
+    }
   },
   "12D1": {
-    "Toán": { "gv": "Nguyễn Vân Anh", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4", "room": "12D1" },
-    "Ngữ văn": { "gv": "Nguyễn Hoàng Nguyên Tú", "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12D1" },
-    "Vật lí": { "gv": "Lâm Ngọc Cớm", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ3-Tiết5", "room": "12D1" },
-    "Hóa học": { "gv": "Lê Đỗ Huy", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12D1" },
-    "Sinh học": { "gv": "root", "time": "root", "room": [] },
-    "Tin học": { "gv": "root", "time": "root", "room": [] },
-    "Lịch sử": { "gv": "Từ Minh Lan", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12D1" },
-    "Địa lí": { "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12D1" },
-    "Tiếng Anh": { "gv": "Phạm Thị Hồng Nhung", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi chiều-Thứ6-Tiết4;Buổi chiều-Thứ6-Tiết5", "room": "12D1" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12D1" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết3", "room": "12D1" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết3", "room": "12D1" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết5;Buổi sáng-Thứ7-Tiết5", "room": "12D1" }
+    "Toán": {
+      "gv": "Nguyễn Vân Anh",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ5-Tiết3;Buổi sáng-Thứ5-Tiết4",
+      "room": "12D1"
+    },
+    "Ngữ văn": {
+      "gv": "Nguyễn Hoàng Nguyên Tú",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12D1"
+    },
+    "Vật lí": {
+      "gv": "Lâm Ngọc Cớm",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "Lê Đỗ Huy",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12D1"
+    },
+    "Sinh học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Tin học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Lịch sử": {
+      "gv": "Từ Minh Lan",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12D1"
+    },
+    "Địa lí": {
+      "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12D1"
+    },
+    "Tiếng Anh": {
+      "gv": "Phạm Thị Hồng Nhung",
+      "time": "Buổi chiều-Thứ6-Tiết4;Buổi chiều-Thứ6-Tiết5",
+      "room": "12D1"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12D1"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết3",
+      "room": "12D1"
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết5",
+      "room": "12D1"
+    }
   },
   "12D2": {
-    "Toán": { "gv": "Nguyễn Thanh Nguyệt", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2", "room": "12D2" },
-    "Ngữ văn": { "gv": "Trần Thị Ngọc Hạnh", "time": "Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ3-Tiết4;Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5", "room": "12D2" },
-    "Vật lí": { "gv": "root", "time": "root", "room": [] },
-    "Hóa học": { "gv": "Đinh Thị Lan Hương", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12D2" },
-    "Sinh học": { "gv": "Phạm Thị Hoài", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12D2" },
-    "Tin học": { "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12A1B" },
-    "Lịch sử": { "gv": "Từ Minh Lan", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12D1" },
-    "Địa lí": { "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12D1" },
-    "Tiếng Anh": { "gv": "Huỳnh Thị Hồng Sương", "time": "Buổi chiều-Thứ4-Tiết2;Buổi chiều-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12D2" },
-    "Tiếng Pháp": { "gv": "root", "time": "root", "room": [] },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2", "room": "12D2" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ4-Tiết3", "room": "12D2" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ5-Tiết3", "room": "12D2" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết5;Buổi sáng-Thứ6-Tiết3;Buổi sáng-Thứ7-Tiết5", "room": "12D2" }
+    "Toán": {
+      "gv": "Nguyễn Thanh Nguyệt",
+      "time": "root",
+      "room": []
+    },
+    "Ngữ văn": {
+      "gv": "Trần Thị Ngọc Hạnh",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5",
+      "room": "12D2"
+    },
+    "Vật lí": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "Đinh Thị Lan Hương",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12D2"
+    },
+    "Sinh học": {
+      "gv": "Phạm Thị Hoài",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12D2"
+    },
+    "Tin học": {
+      "gv": "Nguyễn Hoàng Phú - Nguyễn Thị Thu Hà",
+      "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ4-Tiết2;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12A1B"
+    },
+    "Lịch sử": {
+      "gv": "Từ Minh Lan",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12D1"
+    },
+    "Địa lí": {
+      "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12D1"
+    },
+    "Tiếng Anh": {
+      "gv": "Huỳnh Thị Hồng Sương",
+      "time": "Buổi chiều-Thứ4-Tiết2;Buổi chiều-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5",
+      "room": "12D2"
+    },
+    "Tiếng Pháp": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ5-Tiết2",
+      "room": "12D2"
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ4-Tiết3",
+      "room": "12D2"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết3",
+      "room": "12D2"
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ6-Tiết3",
+      "room": "12D2"
+    }
   },
   "12P": {
-    "Toán": { "gv": "Nguyễn Ngọc Hạnh", "time": "Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3", "room": "12P" },
-    "Ngữ văn": { "gv": "Võ Thị Minh Thư", "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ5-Tiết3", "room": "12P" },
-    "Vật lí": { "gv": "Nguyễn Anh Văn", "time": "Buổi sáng-Thứ2-Tiết3;Buổi sáng-Thứ2-Tiết4;Buổi sáng-Thứ3-Tiết3;Buổi sáng-Thứ3-Tiết4", "room": "12A4" },
-    "Hóa học": { "gv": "Đinh Thị Lan Hương", "time": "Buổi sáng-Thứ2-Tiết1;Buổi sáng-Thứ2-Tiết2;Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2", "room": "12D2" },
-    "Sinh học": { "gv": "Phạm Thị Hoài", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12D2" },
-    "Tin học": { "gv": "root", "time": "root", "room": [] },
-    "Lịch sử": { "gv": "Từ Minh Lan", "time": "Buổi chiều-Thứ3-Tiết3;Buổi chiều-Thứ3-Tiết4;Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5", "room": "12D1" },
-    "Địa lí": { "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng", "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4", "room": "12D1" },
-    "Tiếng Anh": { "gv": "Huỳnh Đặng Bảo Trinh", "time": "Buổi chiều-Thứ4-Tiết2;Buổi chiều-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5", "room": "12C1" },
-    "Tiếng Pháp": { "gv": "Nguyễn Thanh Tú", "time": "Buổi chiều-Thứ2-Tiết3;Buổi chiều-Thứ2-Tiết4;Buổi chiều-Thứ2-Tiết5", "room": "12P" },
-    "Công nghệ CN": { "gv": "root", "time": "root", "room": [] },
-    "Giáo dục KTPL": { "gv": "root", "time": "root", "room": [] },
-    "GDTC": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết1;Buổi sáng-Thứ3-Tiết2", "room": "12P" },
-    "GDĐP": { "gv": "root", "time": "Buổi sáng-Thứ6-Tiết3", "room": "12P" },
-    "QPAN": { "gv": "root", "time": "Buổi sáng-Thứ3-Tiết5", "room": "12P" },
-    "HĐTN": { "gv": "root", "time": "Buổi sáng-Thứ4-Tiết1;Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ7-Tiết5", "room": "12P" }
+    "Toán": {
+      "gv": "Nguyễn Ngọc Hạnh ",
+      "time": "Buổi sáng-Thứ4-Tiết2;Buổi sáng-Thứ4-Tiết3;Buổi chiều-Thứ6-Tiết2;Buổi chiều-Thứ6-Tiết3",
+      "room": "12P"
+    },
+    "Ngữ văn": {
+      "gv": "Võ Thị Minh Thư",
+      "time": "Buổi sáng-Thứ4-Tiết4;Buổi sáng-Thứ4-Tiết5;Buổi sáng-Thứ5-Tiết2;Buổi sáng-Thứ5-Tiết3",
+      "room": "12P"
+    },
+    "Vật lí": {
+      "gv": "Nguyễn Anh Văn",
+      "time": "root",
+      "room": []
+    },
+    "Hóa học": {
+      "gv": "Đinh Thị Lan Hương",
+      "time": "Buổi sáng-Thứ7-Tiết1;Buổi sáng-Thứ7-Tiết2",
+      "room": "12D2"
+    },
+    "Sinh học": {
+      "gv": "Phạm Thị Hoài",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12D2"
+    },
+    "Tin học": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Lịch sử": {
+      "gv": "Từ Minh Lan",
+      "time": "Buổi sáng-Thứ6-Tiết4;Buổi sáng-Thứ6-Tiết5",
+      "room": "12D1"
+    },
+    "Địa lí": {
+      "gv": "Lê Thị Hồng Hạnh - Nguyễn Viết Hằng",
+      "time": "Buổi sáng-Thứ6-Tiết1;Buổi sáng-Thứ6-Tiết2;Buổi sáng-Thứ7-Tiết3;Buổi sáng-Thứ7-Tiết4",
+      "room": "12D1"
+    },
+    "Tiếng Anh": {
+      "gv": "Huỳnh Đặng Bảo Trinh",
+      "time": "Buổi chiều-Thứ4-Tiết2;Buổi chiều-Thứ4-Tiết3;Buổi sáng-Thứ5-Tiết4;Buổi sáng-Thứ5-Tiết5",
+      "room": "12C1"
+    },
+    "Tiếng Pháp": {
+      "gv": "Nguyễn Thanh Tú",
+      "time": "root",
+      "room": []
+    },
+    "Công nghệ CN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "Giáo dục KTPL": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDTC": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "GDĐP": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ4-Tiết1",
+      "room": "12P"
+    },
+    "QPAN": {
+      "gv": "root",
+      "time": "root",
+      "room": []
+    },
+    "HĐTN": {
+      "gv": "root",
+      "time": "Buổi sáng-Thứ5-Tiết1;Buổi sáng-Thứ6-Tiết3",
+      "room": "12P"
+    }
   }
 };
 
@@ -233,6 +937,22 @@ function parseTime(timeStr) {
 function showSubjectDetail(mon) {
   const { info } = _currentSubjectMap[mon] || {};
   if (!info) return;
+
+  // Môn không có lịch trong tuần
+  if (!info.time || info.time === 'root') {
+    const html = `
+      <div class="modal-header">
+        <div class="modal-title">📖 ${mon}</div>
+        <div class="modal-subtitle">Chi tiết môn học</div>
+      </div>
+      <div class="modal-body">
+        <div style="text-align:center;padding:24px 0;color:var(--text-muted);font-size:0.95rem;">
+          📭 Trong tuần không có tiết môn <strong>${mon}</strong>
+        </div>
+      </div>`;
+    openModal(html);
+    return;
+  }
 
   const slots = parseTime(info.time);
   const gvDisplay = (info.gv === 'root' || !info.gv) ? '—' : info.gv;
@@ -273,7 +993,7 @@ function showSubjectDetail(mon) {
 // ══════════════════════════════════════════════════
 //  BUILD TIMETABLE GRID
 // ══════════════════════════════════════════════════
-function buildTimetableGrid(subjectMap) {
+function buildTimetableGrid(subjectMap, selectedClass) {
   const grid = {};
   SESSIONS.forEach(s => { grid[s] = {}; DAYS_ORDER.forEach(d => { grid[s][d] = {}; }); });
 
@@ -285,6 +1005,19 @@ function buildTimetableGrid(subjectMap) {
       grid[session][day][tiet].push({ mon, ttClass });
     });
   });
+
+  // Nếu Thứ7 - Buổi sáng - Tiết5 trống thì điền SHCN
+  const thu7SangTiet5 = grid['Buổi sáng']['Thứ7']['Tiết5'];
+  if (!thu7SangTiet5 || thu7SangTiet5.length === 0) {
+    grid['Buổi sáng']['Thứ7']['Tiết5'] = [{ mon: '__SHCN__', ttClass: 'tt-phu' }];
+    // Đảm bảo Thứ7 xuất hiện trong activeDays
+    if (!subjectMap['__SHCN__']) {
+      subjectMap['__SHCN__'] = {
+        info: { gv: 'GVCN', time: 'Buổi sáng-Thứ7-Tiết5', room: selectedClass },
+        ttClass: 'tt-phu'
+      };
+    }
+  }
 
   const activeDays = DAYS_ORDER.filter(d =>
     SESSIONS.some(s => Object.values(grid[s][d]).some(arr => arr.length > 0))
@@ -316,6 +1049,13 @@ function buildTimetableGrid(subjectMap) {
         } else {
           html += '<td>';
           cells.forEach(({ mon, ttClass }) => {
+            if (mon === '__SHCN__') {
+              html += `<div class="tt-cell tt-phu">
+                <span class="tt-subject">SHCN</span>
+                <span class="tt-room">P. ${selectedClass}</span>
+              </div>`;
+              return;
+            }
             const info = subjectMap[mon] ? subjectMap[mon].info : null;
             const roomStr = info && !Array.isArray(info.room) ? `P. ${info.room}` : '';
             html += `<div class="tt-cell ${ttClass}" onclick="showSubjectDetail('${mon.replace(/'/g, "\\'")}')">
@@ -420,28 +1160,7 @@ function handleSubmit(e) {
   const selectedSubjects = Array.from(optionalCheckboxes).map(cb => cb.value);
   const classData = timetableData[selectedClass];
 
-  // Kiểm tra môn tự chọn
-  const invalidSubjects = selectedSubjects.filter(mon => {
-    const info = classData[mon];
-    return !info || info.time === 'root';
-  });
-
   const resultSection = document.getElementById('result-section');
-
-  if (invalidSubjects.length > 0) {
-    resultSection.style.display = 'block';
-    resultSection.innerHTML = `
-      <div class="error-banner">
-        <span class="icon">⚠️</span>
-        <div>
-          <strong>Tổ hợp không hợp lệ!</strong><br>
-          Môn <strong>${invalidSubjects.join(', ')}</strong> không có lịch học cho lớp <strong>${selectedClass}</strong>.
-          Vui lòng chọn lại tổ hợp môn.
-        </div>
-      </div>`;
-    resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    return;
-  }
 
   // 4 môn chính
   const mainSubjects = ['Toán', 'Ngữ văn', ...selectedSubjects];
@@ -469,7 +1188,7 @@ function handleSubmit(e) {
   _currentSubjectMap = allForTT;
   _currentColorMap   = colorMap;
 
-  const ttHtml = buildTimetableGrid(allForTT);
+  const ttHtml = buildTimetableGrid(allForTT, selectedClass);
   const detailHtml = buildSubjectDetailList(allForTT, mainSubjects);
 
   resultSection.style.display = 'block';
